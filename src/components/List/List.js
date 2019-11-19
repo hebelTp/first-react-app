@@ -1,24 +1,25 @@
-import React from "react";
-import styles from "./List.scss";
-import Hero from "../Hero/Hero.js";
-import Column from "../Column/Column.js";
-import Creator from "../Creator/Creator.js";
-import PropTypes from "prop-types";
-import { settings } from "../../data/dataStore";
-import ReactHtmlParser from "react-html-parser";
+import React from 'react';
+import styles from './List.scss';
+import Hero from '../Hero/Hero.js';
+import Column from '../Column/Column.js';
+import Creator from '../Creator/Creator.js';
+import PropTypes from 'prop-types';
+import { settings } from '../../data/dataStore';
+import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
   state = {
-    columns: this.props.columns || []
+    columns: this.props.columns || [],
   };
   static propTypes = {
     title: PropTypes.node.isRequired,
     source: PropTypes.string,
     description: PropTypes.node,
-    columns: PropTypes.array
+    columns: PropTypes.array,
+    image: PropTypes.string,
   };
   static defaultProps = {
-    description: settings.defaultListDescription
+    description: settings.defaultListDescription,
   };
   addColumn(title) {
     this.setState(state => ({
@@ -29,10 +30,10 @@ class List extends React.Component {
             ? state.columns[state.columns.length - 1].key + 1
             : 0,
           title,
-          icon: "list-alt",
-          cards: []
-        }
-      ]
+          icon: 'list-alt',
+          cards: [],
+        },
+      ],
     }));
   }
   render() {
