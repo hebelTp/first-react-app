@@ -9,7 +9,7 @@ class Card extends React.Component {
 
   render() {
     const { title } = this.props;
-    console.log('Card', this.props.title);
+    // console.log('Card', this.props.title);
     return (
       <div className={styles.component}>
         <p>{title}</p>

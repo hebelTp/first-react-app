@@ -21,7 +21,7 @@ class List extends React.Component {
   };
   render() {
     const { title, image, description, columns, addColumn } = this.props;
-    console.log('this.props.LIST', this.props);
+    // console.log('this.props.LIST', this.props);
     return (
       <section className={styles.component}>
         <Hero titleText={title} image={image} />
