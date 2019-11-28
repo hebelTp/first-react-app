@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import style from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Button/Icon';
+import Search from '../Search/Search';
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
           <Link className={style.logo} to="/">
             <Icon name="cat" />
           </Link>
+          <Search />
           <nav>
             <NavLink exact to="/" activeClassName="active">
               Home

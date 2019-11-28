@@ -89,6 +89,20 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Buylist to <b>black friday!</b>',
+    description: 'Interesting things I want to buy!',
+    image:
+      'https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2019/11/black-friday-xiaomi-1180x541.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Films to watch',
+    description: 'Interesting films I want to watch!',
+    image:
+      'https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2019/08/gwiezdne-wojny-star-wars-disney-plany-1180x541.jpeg',
+  },
 ];
 
 const columns = [
@@ -113,8 +127,14 @@ const columns = [
   {
     id: 'column-4',
     listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    title: 'Buy list',
+    icon: 'shopping-cart',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-3',
+    title: 'Watchlist',
+    icon: 'video',
   },
 ];
 
