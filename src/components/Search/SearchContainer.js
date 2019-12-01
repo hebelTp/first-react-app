@@ -6,7 +6,7 @@ import {
 } from '../../redux/searchStringRedux';
 
 const mapStateToProps = state => {
-  console.log('state', state);
+  // console.log('state', state);
   const { searchString } = state;
   return {
     searchString: state.searchString,

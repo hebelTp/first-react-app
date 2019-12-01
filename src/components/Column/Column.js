@@ -21,7 +21,7 @@ class Column extends React.Component {
     icon: settings.defaultColumnIcon,
   };
   render() {
-    console.log('thisColumn', this.props);
+    // console.log('thisColumn', this.props);
     const { title, icon, cards, addColumn } = this.props;
     return (
       <section className={styles.component}>

@@ -11,7 +11,7 @@ class Home extends React.Component {
   };
   render() {
     const { title, subtitle, lists } = this.props;
-    console.log('HOME', this);
+    // console.log('HOME', this);
     return (
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
